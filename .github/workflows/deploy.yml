@@ -41,7 +41,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: portfolio-page-dist
-          path: dist
+          path: dist/drischdaan.dev
 
   deploy:
     name: Deploy
