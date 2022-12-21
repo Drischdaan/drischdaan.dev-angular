@@ -1,27 +1,67 @@
-# DrischdaanDev
+<a name="readme-top"></a>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+<div align="center">
+  <!-- <a href="https://github.com/Drischdaan/drischdaan.dev">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a> -->
+  <h3 align="center">drischdaan.dev</h3>
+  <p align="center">
+    Personal portfolio website
+    <br />
+    <a href="https://drischdaan.dev"><strong>Explore the page »</strong></a>
+    <br />
+  </p>
+</div>
 
-## Development server
+<div align="center">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+  [![Issues][issues-shield]][issues-url]
+  [![MIT License][license-shield]][license-url]
 
-## Code scaffolding
+</div>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠️ Built With
 
-## Build
+This project was build with following frameworks/libraries:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+[![Angular][Angular]][Angular-url]
+[![TailwindCSS][TailwindCSS]][TailwindCSS-url]
 
-## Running unit tests
+## 📜 License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## Running end-to-end tests
+## 🫱🏽‍🫲🏽 Contact
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[![Github][Github]][Github-url]
+[![Discord][Discord]][Discord-url]
+[![Twitter][Twitter]][Twitter-url]
 
-## Further help
+<div>
+    <a href="https://www.buymeacoffee.com/Drischdaan">
+        <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=Drischdaan&button_colour=BD5FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00">
+    </a>
+</div>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<!-- Variables -->
+[issues-shield]: https://img.shields.io/github/issues/Drischdaan/drischdaan.dev.svg?style=for-the-badge
+[issues-url]: https://github.com/Drischdaan/drischdaan.dev/issues
+[license-shield]: https://img.shields.io/github/license/Drischdaan/drischdaan.dev.svg?style=for-the-badge
+[license-url]: https://github.com/Drischdaan/drischdaan.dev/blob/master/LICENSE.txt
+
+<!-- Frameworks -->
+[Angular]: https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[TailwindCSS]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/
+
+<!-- Socials -->
+[Github]: https://skillicons.dev/icons?i=github
+[Github-url]: https://github.com/Drischdaan
+[Discord]: https://skillicons.dev/icons?i=discord
+[Discord-url]: https://discord.com/users/244115221776433152
+[Twitter]: https://skillicons.dev/icons?i=twitter
+[Twitter-url]: https://twitter.com/Drischdaan
+
+<!-- https://github.com/tandpfun/skill-icons -->
+<!-- https://github.com/Ileriayo/markdown-badges -->
