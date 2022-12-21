@@ -8,7 +8,7 @@
   <p align="center">
     Personal portfolio website
     <br />
-    <a href="https://drischdaan.dev"><strong>Explore the page »</strong></a>
+    <a href="https://portfolio-page-4ca36.web.app/"><strong>Explore the page »</strong></a>
     <br />
   </p>
 </div>
