@@ -2,6 +2,24 @@
 
 exports[`AppComponent should match snapshot 1`] = `
 AppComponent {
-  "__ngContext__": 2,
+  "__ngContext__": 3,
+  "navigationItems": [
+    {
+      "id": "home",
+      "name": "Home",
+    },
+    {
+      "id": "about",
+      "name": "About",
+    },
+    {
+      "id": "projects",
+      "name": "Projects",
+    },
+    {
+      "id": "contact",
+      "name": "Contact",
+    },
+  ],
 }
 `;
