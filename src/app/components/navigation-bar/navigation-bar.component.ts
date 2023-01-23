@@ -1,15 +1,32 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { BehaviorSubject } from 'rxjs';
+import { INavigationItem } from './models/navigation-bar.models';
 
 @Component({
   selector: 'app-navigation-bar',
   templateUrl: './navigation-bar.component.html',
   styleUrls: ['./navigation-bar.component.scss']
 })
-export class NavigationBarComponent implements OnInit {
+export class NavigationBarComponent {
 
-  constructor() { }
+  @Input() items: INavigationItem[] = [];
 
-  ngOnInit(): void {
+  mobileMenuOpen$: BehaviorSubject<boolean> = new BehaviorSubject(false);
+
+  constructor(
+    private readonly router: Router
+  ) { }
+
+  public onMobileMenuClicked(value: boolean): void {
+    this.mobileMenuOpen$.next(value);
+  }
+
+  public onNavigationItemClicked(id: string): void {
+    this.router.onSameUrlNavigation = "reload";
+    this.router.navigate(['/'], { fragment: id }).finally(() => {
+      this.router.onSameUrlNavigation = "ignore";
+    });
   }
 
 }
