@@ -1,4 +1,7 @@
-import { Component, ElementRef, Input } from '@angular/core';
+import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
+
+const MAX_X = 20;
+const MAX_Y = 20;
 
 @Component({
   selector: 'app-project-card',
