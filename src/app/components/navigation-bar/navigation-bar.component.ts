@@ -12,7 +12,7 @@ export class NavigationBarComponent {
 
   @Input() items: INavigationItem[] = [];
 
-  mobileMenuOpen$: BehaviorSubject<boolean> = new BehaviorSubject(true);
+  mobileMenuOpen$: BehaviorSubject<boolean> = new BehaviorSubject(false);
 
   constructor(
     private readonly router: Router
