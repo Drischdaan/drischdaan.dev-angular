@@ -20,7 +20,23 @@
     </div>
   </div>
   <div class="flex-1 flex flex-col justify-center items-center gap-5">
-    <img src="assets/images/temp-picture.png" class="w-[200px] md:w-[200px]">
-    <p class="italic text-neutral-600">*This is temporary*</p>
+    <div class="w-full h-full my-40">
+      <ngt-canvas [scene]="{ background: color }" [camera]="{ fov: 40, near: 0.1, far: 1000, position: [0, 0.25, 2] }">
+        <ngt-ambient-light></ngt-ambient-light>
+        <ngt-spot-light [position]="[2, 2, 2]"></ngt-spot-light>
+
+        <ngt-mesh [position]="[0, -0.2, 0]" [rotation]="[0, -0.5, 0]">
+          <ng-container *ngIf="monitor$ | async as monitor">
+            <ngt-primitive
+              [object]="monitor.scene"
+              (ready)="onReady(monitor.scene)"
+            ></ngt-primitive>
+          </ng-container>
+          <ngt-mesh-standard-material color="gray"></ngt-mesh-standard-material>
+        </ngt-mesh>
+      </ngt-canvas>
+    </div>
+    <!-- <img src="assets/images/temp-picture.png" class="w-[200px] md:w-[200px]">
+    <p class="italic text-neutral-600">*This is temporary*</p> -->
   </div>
 </div>

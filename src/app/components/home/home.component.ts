@@ -1,13 +1,20 @@
+import { NgtGLTFLoader } from '@angular-three/soba/loaders';
 import { Component } from '@angular/core';
+import { AnimationClip, Color, Group, Mesh } from 'three';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
 
-  constructor() { }
+  color: Color = new Color('#0c0b0c');
+  monitor$ = this.loaderService.load('assets/models/Monitor.glb');
+
+  constructor(
+    private readonly loaderService: NgtGLTFLoader,
+  ) { }
 
   public getAge(): number {
     const today: Date = new Date();
@@ -18,6 +25,15 @@ export class HomeComponent {
       age--;
     }
     return age;
+  }
+
+  onReady(model: Group) {
+    model.traverse((child) => {
+      if ((child as Mesh).isMesh) {
+        child.castShadow = true;
+        child.receiveShadow = true;
+      }
+    });
   }
 
 }
